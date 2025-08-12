@@ -86,7 +86,7 @@ class CommandParserError {
 class Command<T> {
   public constructor() {
   }
-  public execute(args: string, state: T) {
+  public execute(_args: string, _state: T) {
     throw "unimplemented";
   }
 }
@@ -266,6 +266,7 @@ class SimpleHasher implements Hasher {
   }
 }
 
+//@ts-ignore
 class VectorHasher implements Hasher {
   // deno-fmt-ignore
   private h1: Array<Array<number>> = [
@@ -348,11 +349,10 @@ function App() {
   const [nextValue, setNextValue] = useState("");
   const [bloom, setBloom] = useState<Bloom>(new Bloom());
   const [terminaloutput, setTerminalOutput] = useState<string>("Welcome<br>Type usage for more information.");
-  const [debug, setDebug] = useState<boolean>(true);
 
   const cliParser = new CliParser();
 
-  function BloomFilterInfo(props: {}) {
+  function BloomFilterInfo() {
     return (
       <div className="BloomFilterInfo">
         <div style={{display: "flex"}}>
@@ -485,9 +485,7 @@ function App() {
           </div>
         </div>
         <div
-          className="BloomFilterWrapper"
-          style={{ display: debug ? "flex" : "none" }}
-        >
+          className="BloomFilterWrapper">
           <Accordion defaultActiveKey={["0"]} alwaysOpen>
             <Accordion.Item eventKey="0">
               <Accordion.Header>Bloom Filter Status</Accordion.Header>
