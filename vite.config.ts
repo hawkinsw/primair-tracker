@@ -4,6 +4,7 @@ import * as path from 'node:path';
 
 // https://vite.dev/config/
 export default defineConfig({
+	base: "/tracker/",
 	plugins: [react()],
 	resolve: {
 		alias: {
