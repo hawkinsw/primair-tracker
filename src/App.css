@@ -1,0 +1,204 @@
+@import '~bootstrap/dist/css/bootstrap';
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.BloomFilterWrapper {
+  display: flex;
+  min-height: 100px;
+  flex-direction: column;
+
+.accordion {
+    .accordion-item {
+      border-color: black;
+        background-color: tan;
+
+      .accordion-header {
+        .accordion-button {
+          background-color: color-mix(in srgb, white, transparent 50%);
+          box-shadow: none;
+        }
+      }
+
+      .accordion-collapse {
+        background-color: tan;
+
+        .accordion-body {
+          border-top: 1px solid black;
+        }
+      }
+    }
+  }
+}
+
+.BloomFilter {
+  display: flex;
+  height: 100px;
+}
+
+.BloomFilterTitle {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.BloomFilterBitOuter {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  align-content: center;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+.BloomFilterBitHeaderNew {
+  clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+  min-height: 15px;
+  background-color: green;
+}
+.BloomFilterBitHeaderExisting {
+  min-height: 15px;
+}
+
+.BloomFilterBitHeader {
+  display: flex;
+  background-color: lightgray;
+  justify-content: center;
+  border-bottom: 4px solid black;
+}
+
+.BloomFilterBitValue {
+  display: flex;
+  flex: 1 1 0;
+}
+
+.LogPackageTerminalOuter {
+  display: flex;
+  overflow-wrap: anywhere;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: tan;
+  row-gap: 10px;
+}
+
+.LogPackageTerminalInner {
+  display: flex;
+  height: 800px;
+  overflow-wrap: anywhere;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  border-radius: 10px;
+  border-top: 15px;
+  padding: 5px;
+}
+
+.LogPackageTerminalLogoLine {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: color-mix(in srgb, white, transparent 50%);
+}
+
+.LogPackageTerminalLogo {
+  flex-grow: 1;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: 22px;
+  text-align: right;
+}
+
+
+.LogPackageTerminalOutput {
+  display: flex;
+  background-color: black;
+  overflow-y: scroll;
+  font-size: 24px;
+  color: green;
+  text-align: left;
+  flex-direction: column-reverse;
+}
+
+.LogPackageTerminalCli {
+  display: flex;
+  background-color: black;
+  font-size: 24px;
+  color: green;
+  padding-top: 5px;
+}
+
+.BloomFilterInfo{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 3px;
+}
+
+.LogPackagePrompt {
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  font-weight: bolder;
+  font-size: 34px;
+  padding-right: 5px;
+  color: green;
+  align-items: flex-start;
+}
+
+/* Make custom cursor. */
+.LogPackageInput {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  font-weight: bolder;
+  font-size: 24px;
+  color: green;
+  width: 100%;
+  align-self: center;
+  border: none;
+  outline:none
+}
+
+.LogPackageInputHolder {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.LogPackageButton {
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: lightgray;
+  font-weight: bolder;
+  font-size: 18px;
+  color: green;
+  align-self: center;
+}
+
+.QueryPackageButton {
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: lightgray;
+  font-weight: bolder;
+  font-size: 18px;
+  color: green;
+  align-items: flex-start;
+}
+
+.LogPackageButtonHolder {
+  display: flex;
+  align-items: flex-start;
+}
+
